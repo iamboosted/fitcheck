@@ -3,7 +3,8 @@
 Plan **llama.cpp multi-GPU splits** from a GGUF header and get a working
 `llama-server` command, entirely in your browser.
 
-**Live:** https://iamboosted.github.io/fitcheck/ _(placeholder)_
+**Live:** https://iamboosted.github.io/fitcheck/
+
 
 - Drop a local `.gguf` (or every shard of one). Only the header is read, via
   `File.slice()`. The weights are never loaded and nothing is uploaded.
@@ -19,7 +20,8 @@ Plan **llama.cpp multi-GPU splits** from a GGUF header and get a working
 
 ## Screenshots
 
-_Add screenshots here._
+<img width="1596" height="1190" alt="FitCheck application screenshot" src="https://github.com/user-attachments/assets/dce2dca8-710a-49c9-937c-4005a28a905a" />
+
 
 ## How the math works
 
