@@ -1,0 +1,29 @@
+{
+  "name": "fitcheck-monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "apps/web"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc -p packages/core/tsconfig.json --noEmit && tsc -p apps/web/tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "build": "npm run lint && npm run typecheck && npm run build -w @fitcheck/core && npm run build -w @fitcheck/web",
+    "test": "vitest run",
+    "test:live": "FITCHECK_LIVE=1 vitest run packages/core/test/live.test.ts",
+    "dev": "npm run dev -w @fitcheck/web"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "eslint": "10.12.0",
+    "fast-check": "4.10.2",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}
