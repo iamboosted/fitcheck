@@ -20,7 +20,8 @@ Plan **llama.cpp multi-GPU splits** from a GGUF header and get a working
 
 ## Screenshots
 
-<img width="1596" height="1190" alt="FitCheck application screenshot" src="https://github.com/user-attachments/assets/dce2dca8-710a-49c9-937c-4005a28a905a" />
+<img width="1596" height="1190" alt="FitCheck application screenshot empty" src="https://github.com/user-attachments/assets/dce2dca8-710a-49c9-937c-4005a28a905a" />
+<img width="1247" height="1437" alt="FitCheck application screenshot loaded" src="https://github.com/user-attachments/assets/533550eb-8809-449e-a9c1-ec77c05be066" />
 
 
 ## How the math works
